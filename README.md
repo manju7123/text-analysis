@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+React project:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# **Real-Time Text Analysis and String Replacement**
 
-In the project directory, you can run:
+A React-based web application that performs real-time text analysis on user input. The app displays the number of unique words, counts characters (excluding spaces and punctuation), and provides functionality to dynamically replace specified strings within the text. The replaced words are also highlighted.
 
-### `npm start`
+## **Features**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Unique Word Count**: Displays the number of unique words entered, case-insensitive.
+- **Character Count**: Provides the number of characters excluding spaces and punctuation.
+- **String Replacement**: Replace all occurrences of a given string with another string.
+- **Highlighted Replacements**: After replacement, highlights the replaced words.
+- **Responsive Design**: Optimized for different screen sizes using CSS media queries.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **Demo**
 
-### `npm test`
+You can view the live application [here](https://your-deployed-app-link).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Technologies Used**
 
-### `npm run build`
+- **React** (Hooks & Functional Components)
+- **CSS** (Custom styles and media queries)
+- **JavaScript** (RegEx for word and character manipulation)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Getting Started**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow the instructions below to get the project up and running locally.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **1. Clone the Repository**
 
-### `npm run eject`
+```bash
+git clone https://github.com/manju7123/text-analysis.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **2. Navigate to the Project Directory**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd text-analysis
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **3. Install Dependencies**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Run the following command to install the required dependencies:
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### **4. Start the Development Server**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## **Usage**
 
-### Analyzing the Bundle Size
+1. **Type or paste text** into the large textarea.
+2. **Real-Time Statistics**:
+   - See the unique word count and character count below the textarea.
+3. **String Replacement**:
+   - Enter the string you want to search for and replace in the respective input fields.
+   - Click the "Replace All" button to apply the changes.
+   - Replaced words will be highlighted in the text.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## **Responsive Design**
 
-### Making a Progressive Web App
+This app is optimized for both desktop and mobile viewing. Below are some key breakpoints:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Devices under **600px** width display a stacked layout for mobile responsiveness.
+- Larger screens provide a side-by-side layout for better text visibility.
 
-### Advanced Configuration
+## **Contributing**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you'd like to contribute to this project, feel free to fork the repository, create a feature branch, and submit a pull request!
 
-### Deployment
+## **License**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---

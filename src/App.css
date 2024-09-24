@@ -1,38 +1,107 @@
-.App {
+/* Global styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* App container */
+.app-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Heading */
+.heading {
+  font-size: 24px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Textarea styling */
+.input-textarea {
+  width: 90%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Statistics container */
+.stats-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stat-item {
+  font-size: 16px;
+}
+
+/* Replacement input and button styling */
+.replace-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.replace-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.replace-button {
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.replace-button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Highlighted text container */
+.highlighted-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Highlighted text span */
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  .app-container {
+    width: 95%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .replace-section {
+    flex-direction: column;
+  }
+
+  .replace-input {
+    margin-bottom: 10px;
   }
 }
